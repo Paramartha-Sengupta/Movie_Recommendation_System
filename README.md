@@ -50,8 +50,27 @@ where,
 
 The next step is to determine an appropriate value for m, the minimum votes required to be listed in the chart. We will use 90th percentile as our cutoff. In other words, for a movie to feature in the charts, it must have more votes than at least 96% of the movies in the list.
 
-## Recommendation List by the Simple Recommender Approach
+### 1.1. Additionally, we have pivoted them by the Movie Genres. 
 
-	![image](https://user-images.githubusercontent.com/68769656/157386872-eb49580f-afd2-4ba2-9aa7-27a903f9132f.png)
+# 2. Content Based Recommender
+
+The recommender we built in the previous section suffers some severe limitations. For one, it gives the same recommendation to everyone, regardless of the user's personal taste.
+
+For a person who loves codemy movies (and hates drama) were to look at our Top 15 Chart,he/she wouldn't probably like most of the movies. If he/she were to go one step further and look at our charts by genre, still wouldn't be getting the best recommendations.
+
+For instance, consider a person who loves Dilwale Dulhania Le Jayenge, My Name is Khan and Kabhi Khushi Kabhi Gham. One inference we can obtain is that the person loves the actor Shahrukh Khan and the director Karan Johar. Even if he/she were to access the romance chart, they wouldn't find these as the top recommendations.
+
+To personalise our recommendations more, we will be going to build an engine that computes similarity between movies based on certain metrics and suggests movies that are most similar to a particular movie that a user liked.
+
+Since we will be using movie metadata (or content) to build this engine, this also known as Content Based Filtering.
+
+We will build two Content Based Recommenders based on:
+
+### 2.1. Movie Overviews and Taglines
+### 2.2. Movie Cast, Crew, Keywords and Genre
+
+
+
+
 
 
