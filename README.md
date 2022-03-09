@@ -122,7 +122,8 @@ In this notebook, we have built 4 different recommendation engines based on diff
 
 Overall the data source is very well oriented, and not much of a cleaning task was required. Will be adding on many more updates!!!
 
-![image](https://user-images.githubusercontent.com/68769656/157389136-0bce3d05-f40e-4115-bc65-df50943b35fc.png)
+![image](https://user-images.githubusercontent.com/68769656/157389283-0ab4bfbd-15cb-411c-bbca-8b8f0a66b9bb.png)
+
 
 
 
