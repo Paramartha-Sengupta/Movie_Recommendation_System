@@ -39,5 +39,19 @@ Please refer to the following link for any further information: http://surprisel
 The Simple Recommender offers generalized recommnendations to every user based on movie popularity and (sometimes) genre. The basic idea behind this recommender is that movies that are more popular and more critically acclaimed will have a higher probability of being liked by the average audience. This model does not give personalized recommendations based on the user.
 The implementation of this model is extremely trivial. All we have to do is sort our movies based on ratings and popularity and display the top movies of our list. As an added step, we can pass in a genre argument to get the top movies of a particular genre
 
-https://www.kaggle.com/paramarthasengupta/movies-recommendation-tool-approaching-patterns?scriptVersionId=89391070&cellId=21
+We will use the IMDB Ratings to come up with our Top Movies Chart. I will use IMDB's weighted rating formula to construct my chart. Mathematically, it is represented as follows:
+
+   Weighted Rank (WR) = (v ÷ (v+m)) × R + (m ÷ (v+m)) × C
+where,   
+  R = average for the movie (mean) = (Rating)
+  v = number of votes for the movie = (votes)
+  m = minimum votes required to be listed in the Top 250 
+  C = the mean vote across the whole report 
+
+The next step is to determine an appropriate value for m, the minimum votes required to be listed in the chart. We will use 90th percentile as our cutoff. In other words, for a movie to feature in the charts, it must have more votes than at least 96% of the movies in the list.
+
+## Recommendation List by the Simple Recommender Approach
+
+	![image](https://user-images.githubusercontent.com/68769656/157386872-eb49580f-afd2-4ba2-9aa7-27a903f9132f.png)
+
 
